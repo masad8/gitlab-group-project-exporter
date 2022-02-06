@@ -5,11 +5,11 @@ from gitlabexporter.projectexport import ExportProjects
 
 
 if __name__ == "__main__":
+    MAIN_GROUP_ID = 1234567
     GITLAB_PRIVATE_KEY = 'ABC'
     GITLAB_URL = 'https://gitlab.com'
-    MAIN_GROUP_ID = 1234567
-    EXPORT_TIMEOUT_PROJECT = 3600  # seconds
     EXPORT_TIME_GROUP = 60  # seconds
+    EXPORT_TIMEOUT_PROJECT = 3600  # seconds
     EXPORT_PATH_GROUP = os.environ['HOME'] + "/gitlab-backups/" + \
         datetime.today().strftime('%Y%m%d') + "/groups/"
     EXPORT_PATH_PROJECT = os.environ['HOME'] + "/gitlab-backups/" + \
